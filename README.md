@@ -1,33 +1,17 @@
- 
+ #Welcome To Pauls Adventure 2
+#### A New Way
+
+> Open this page at [https://tpro99oficial.github.io/pauls-adventure-2-a-new-way/](https://tpro99oficial.github.io/pauls-adventure-2-a-new-way
+Pauls Adventure 2 Runs In Mobile Phones
+> Note The Web Browser MUST Acept JavaScript
+Pauls Adventure 2 Requieres JavaScript to Run The Game
 
 
-> Open this page at [https://tpro99oficial.github.io/pauls-adventure-2-a-new-way/](https://tpro99oficial.github.io/pauls-adventure-2-a-new-way/)
+# Frecuently Asked Questions (FAQ)
 
-## Use as Extension
-
-This repository can be added as an **extension** in MakeCode.
-
-* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/tpro99oficial/pauls-adventure-2-a-new-way** and import
-
-## Edit this project ![Build status badge](https://github.com/tpro99oficial/pauls-adventure-2-a-new-way/workflows/MakeCode/badge.svg)
-
-To edit this repository in MakeCode.
-
-* open [https://arcade.makecode.com/](https://arcade.makecode.com/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/tpro99oficial/pauls-adventure-2-a-new-way** and click import
-
-## Blocks preview
-
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
-
-![A rendered view of the blocks](https://github.com/tpro99oficial/pauls-adventure-2-a-new-way/raw/master/.github/makecode/blocks.png)
-
-#### Metadata (used for search, rendering)
-
-* for PXT/arcade
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+> Q: What I Need To Run Pauls Adventure 2 for PC?
+R: You Must Need A Web Browser like Microsoft Edge  Legacy (2015) Google Chrome 39, Safari in a MacOS 10.13
+> Q: Where Does Pauls Adventure Got Programmed?
+Pauls Adventure Uses JavaScript (for Values Images and Menus) and Python (for the Misc. Values, Characters etc.)
+> Q: How Does Pauls Adventure 2 Works On Mobile?)
+A: Pauls Adventure 2 Includes 4 Buttons (plus The + is 5) Also It Runs With The TWUG Integration API (a UI made in JS need code Basics)
