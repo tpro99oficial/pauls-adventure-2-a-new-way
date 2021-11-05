@@ -1,4 +1,5 @@
 let paul: Sprite = null
+scene.cameraFollowSprite(paul)
 game.setDialogFrame(img`
     f f f f f f f f f f f f f f f 
     f 1 1 1 1 1 1 1 1 1 1 1 1 1 f 
@@ -62,6 +63,6 @@ if (story.checkLastAnswer("Miss Gardou")) {
         . . . f f 1 d 1 d 1 d f f . . . 
         . . . . . f f b b f f . . . . . 
         `, SpriteKind.Player)
-    controller.moveSprite(paul)
+    controller.moveSprite(paul, 100, 100)
     tiles.setTilemap(tilemap`level1`)
 }
