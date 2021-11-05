@@ -1,3 +1,9 @@
+controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
+    story.showPlayerChoices("Volume", "Developers", "Exit", "Return To Game")
+    if (story.checkLastAnswer("Exit")) {
+        game.reset()
+    }
+})
 let paul: Sprite = null
 game.setDialogFrame(img`
     f f f f f f f f f f f f f f f 
@@ -152,6 +158,13 @@ if (story.checkLastAnswer("Settings")) {
     story.showPlayerChoices("GamNet ID", "General")
     if (story.checkLastAnswer("General")) {
         story.showPlayerChoices("Sound", "GamNet ID Settings", "Brightness", "About")
+        if (story.checkLastAnswer("About")) {
+            story.showPlayerChoices("Copyright", "About Game", "Manual")
+            if (story.checkLastAnswer("Manual")) {
+                game.showLongText("Press A Button To Continue, In Game Press A Does Nothing, Press MENU To Get A Show of Pauls Adventure 2 Menu Press RESET To Restart The Game Use the + To Move Into The Options and Move Paul, Press A Again to Reset", DialogLayout.Bottom)
+                game.reset()
+            }
+        }
     }
     if (story.checkLastAnswer("GamNet ID")) {
         game.showLongText("Connect Your GamNet ID to Pauls Adventure 2 to get Features Like Multiplayer", DialogLayout.Bottom)
