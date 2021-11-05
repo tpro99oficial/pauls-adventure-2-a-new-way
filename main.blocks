@@ -1,0 +1,51 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="~$mQpY|~(./RconXJbz%">Player</variable><variable type="KIND_SpriteKind" id="PnH~W49;[[Pg^wcRg@A6">Projectile</variable><variable type="KIND_SpriteKind" id="%dZ]hsIGd4v{iH+jX^G]">Food</variable><variable type="KIND_SpriteKind" id="]^MBC9^(i9dM)Y~nTUz!">Enemy</variable><variable id="]8L}D-.AGyQ1W5Kxw5b[">mySprite</variable><variable id="Rc$s.8tr]7)TL$[W`+#q">paul</variable></variables><block type="pxt-on-start" id="pU[qh#nSr,x)W$qRSz/b" x="0" y="0"><statement name="HANDLER"><block type="game_dialog_set_frame" id="_:n=k*k_TYv,bqOzEI[I"><value name="frame"><shadow type="dialog_image_picker" id="1nIFeMPLb]).uG0?~_/-"><field name="img">img`
+f f f f f f f f f f f f f f f 
+f 1 1 1 1 1 1 1 1 1 1 1 1 1 f 
+f 1 1 1 1 1 1 1 1 1 1 1 1 1 f 
+f 1 1 1 1 1 1 1 1 1 1 1 1 1 f 
+f 1 1 1 1 1 1 1 1 1 1 1 1 1 f 
+f 1 1 1 1 1 1 1 1 1 1 1 1 1 f 
+f 1 1 1 1 1 1 1 1 1 1 1 1 1 f 
+f 1 1 1 1 1 1 1 1 1 1 1 1 1 f 
+f 1 1 1 1 1 1 1 1 1 1 1 1 1 f 
+f 1 1 1 1 1 1 1 1 1 1 1 1 1 f 
+f 1 1 1 1 1 1 1 1 1 1 1 1 1 f 
+f 1 1 1 1 1 1 1 1 1 1 1 1 1 f 
+f 1 1 1 1 1 1 1 1 1 1 1 1 1 f 
+f 1 1 1 1 1 1 1 1 1 1 1 1 1 f 
+f f f f f f f f f f f f f f f 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"1nIFeMPLb]).uG0?~_/-"}}</data></shadow></value><next><block type="game_show_long_text" id=")wc-S*1%jJ8w^6xF][}:"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text" id="(NDh6y|D)eQ{awOrIri_"><field name="TEXT">Conecting To Pauls Adventure 2: A New Way</field></shadow></value><next><block type="arcade_story_show_player_choices" id="-Z-zt}|i;:`qef(66@*9"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="choice1"><shadow type="text" id="MXyZ2Hyko2ol(%B]kHN4"><field name="TEXT">Pauls Adventure 2 Menu</field></shadow></value><value name="choice2"><shadow type="text" id="}_wvF%lY-o9/Jg~|#?[!"><field name="TEXT">Play</field></shadow></value><value name="choice3"><shadow type="text" id="](j@yFCjn._rC7`-_hjo"><field name="TEXT">Settings</field></shadow></value><value name="choice4"><shadow type="text" id="$%~uc,tn@V$W2K5F2zBc"><field name="TEXT">Multiplayer</field></shadow></value><next><block type="controls_if" id="]vX`V2S}3*^S^Y0d/sC_"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="arcade_story_last_answer" id="sR2@xQ.mth-5!gZKD*p)"><value name="choice"><shadow type="text" id="2}^q)=p5bs}$||gb#lD/"><field name="TEXT">Play</field></shadow></value></block></value><statement name="DO0"><block type="arcade_story_show_player_choices" id="L2pTfLd7S];h4VuEp1h3"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="choice1"><shadow type="text" id="5AdQSyq=I/1NMn1+n}~g"><field name="TEXT">Paul</field></shadow></value><value name="choice2"><shadow type="text" id="~^FzyVM2HQHyF9C^#/Ec"><field name="TEXT">Miss Gardlou</field></shadow></value><next><block type="controls_if" id="!k^SH9yOwQ1gjl0D}tij"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="arcade_story_last_answer" id="Dds(/iX0?G@E5VP={TIv"><value name="choice"><shadow type="text" id="dHN@N802A4Nf%fRd0Q.T"><field name="TEXT">Paul</field></shadow></value></block></value><statement name="DO0"><block type="variables_set" id="n3ELXr%L#j(U#vBJM%n["><field name="VAR" id="Rc$s.8tr]7)TL$[W`+#q">paul</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="wiD^s-m;HVe6nbS)k-V{"><value name="img"><shadow type="screen_image_picker" id="i$o,_KjK1+}AnGlvh8=G"><field name="img">img`
+. . . . . . f f f f . . . . . . 
+. . . . f f f 2 2 f f f . . . . 
+. . . f f f 2 2 2 2 f f f . . . 
+. . f f f e e e e e e f f f . . 
+. . f f e 2 2 2 2 2 2 e e f . . 
+. . f e 2 f f f f f f 2 e f . . 
+. . f f f f e e e e f f f f . . 
+. f f e f b f 4 4 f b f e f f . 
+. f e e 4 1 f d d f 1 4 e e f . 
+. . f e e d d d d d d e e f . . 
+. . . f e e 4 4 4 4 e e f . . . 
+. . e 4 f 2 2 2 2 2 2 f 4 e . . 
+. . 4 d f 2 2 2 2 2 2 f d 4 . . 
+. . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
+. . . . . f f f f f f . . . . . 
+. . . . . f f . . f f . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"i$o,_KjK1+}AnGlvh8=G"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="@X@,{]zBg6FE9,)|hDg$"><field name="MEMBER">Player</field></shadow></value></block></value></block></statement></block></next></block></statement><next><block type="game_control_sprite" id="E,lh:%7QH/i)6MEQL1cY"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="Jo-K(lV^q|+|YT8Z[vDH"><field name="VAR" id="Rc$s.8tr]7)TL$[W`+#q">paul</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="8v.7uq+;dWmvn.UQfd!7"><field name="speed">100</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="R=GQF`=6.%|jsC=6E}9="><field name="speed">100</field></shadow></value><next><block type="tilemap_editor" id="bv5|m3/z`Y/Csnch*.Ch"><field name="tilemap">tilemap`level1`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level1"}}</data><next><block type="controls_if" id="AJBAatEvlcX/qzAslK*s"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="arcade_story_last_answer" id="Z@XpHXWu6}=d9Ov2hSvK"><value name="choice"><shadow type="text" id="!j^,20cHpu=${KJ?:DPd"><field name="TEXT">Miss Gardou</field></shadow></value></block></value><statement name="DO0"><block type="variables_set" id="?jWPcQvjI$`FRxLUNGM/"><field name="VAR" id="Rc$s.8tr]7)TL$[W`+#q">paul</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="sYa3mI1U*1@g@5ab{hxY"><value name="img"><shadow type="screen_image_picker" id="Z`c90k:dLj,l9Fn2~?}?"><field name="img">img`
+. . . . . f f 4 4 f f . . . . . 
+. . . . f 5 4 5 5 4 5 f . . . . 
+. . . f e 4 5 5 5 5 4 e f . . . 
+. . f b 3 e 4 4 4 4 e 3 b f . . 
+. . f 3 3 3 3 3 3 3 3 3 3 f . . 
+. f 3 3 e b 3 e e 3 b e 3 3 f . 
+. f 3 3 f f e e e e f f 3 3 f . 
+. f b b f b f e e f b f b b f . 
+. f b b e 1 f 4 4 f 1 e b b f . 
+f f b b f 4 4 4 4 4 4 f b b f f 
+f b b f f f e e e e f f f b b f 
+. f e e f b d d d d b f e e f . 
+. . e 4 c d d d d d d c 4 e . . 
+. . e f b d b d b d b b f e . . 
+. . . f f 1 d 1 d 1 d f f . . . 
+. . . . . f f b b f f . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"Z`c90k:dLj,l9Fn2~?}?"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="[#$tA=T6u3t_bQ@bVf^D"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="xoBDcPQG3u{tyzOHwc))"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="qIjC[R!PL^@^d.d6+~*^"><field name="VAR" id="Rc$s.8tr]7)TL$[W`+#q">paul</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id=";;OP@}8?V(U:Kukmgy3)"><field name="speed">100</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="SoV?glClve(1u@?23s-q"><field name="speed">100</field></shadow></value><next><block type="tilemap_editor" id="x)P?6Gge+fng9I^a|*Ru"><field name="tilemap">tilemap`level1`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level1"}}</data></block></next></block></next></block></statement></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
