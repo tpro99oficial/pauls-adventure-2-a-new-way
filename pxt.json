@@ -1,6 +1,5 @@
 {
     "name": "Pauls Adventure 2: A New Way",
-    "version": "0.1.0",
     "description": "",
     "dependencies": {
         "device": "*",
@@ -12,7 +11,9 @@
         "README.md",
         "assets.json",
         "tilemap.g.jres",
-        "tilemap.g.ts"
+        "tilemap.g.ts",
+        "images.g.jres",
+        "images.g.ts"
     ],
     "testFiles": [
         "test.ts"
