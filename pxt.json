@@ -1,6 +1,6 @@
 {
     "name": "Pauls Adventure 2: A New Way",
-    "version": "0.3.0",
+    "version": "1.0.0",
     "description": "",
     "dependencies": {
         "device": "*",
