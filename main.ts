@@ -23,7 +23,13 @@ game.setDialogFrame(img`
     f f f f f f f f f f f f f f f 
     `)
 game.showLongText("Conecting To Pauls Adventure 2: A New Way", DialogLayout.Bottom)
-story.showPlayerChoices("Pauls Adventure 2 Menu", "Play", "Settings", "Multiplayer")
+story.showPlayerChoices("Season One", "Play", "Settings", "Multiplayer")
+if (story.checkLastAnswer("Season One")) {
+    story.showPlayerChoices("New On This Season", "Play Season One", "More...")
+    if (story.checkLastAnswer("More...")) {
+        story.showPlayerChoices("", "Story Of Season")
+    }
+}
 if (story.checkLastAnswer("Multiplayer")) {
     story.showPlayerChoices("Local", "Online")
     if (story.checkLastAnswer("Local")) {
