@@ -207,7 +207,7 @@ if (story.checkLastAnswer("Settings")) {
                 game.reset()
             }
             if (story.checkLastAnswer("About Game")) {
-                game.showLongText("Pauls Adventure 2 Season 1 Version 1.1.0", DialogLayout.Bottom)
+                game.showLongText("Pauls Adventure 2 Season 1 Version 1.2.0", DialogLayout.Bottom)
                 game.reset()
             }
         }
