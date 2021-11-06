@@ -207,7 +207,7 @@ if (story.checkLastAnswer("Settings")) {
                 game.reset()
             }
             if (story.checkLastAnswer("About Game")) {
-                game.showLongText("Pauls Adventure 2 Season 1 Version 1.2.0", DialogLayout.Bottom)
+                game.showLongText("Pauls Adventure 2 Season 1 Version 1.2.1", DialogLayout.Bottom)
                 game.reset()
             }
         }
@@ -243,7 +243,7 @@ if (story.checkLastAnswer("Play")) {
             . . . . . f f . . f f . . . . . 
             `, SpriteKind.Player)
         scene.cameraFollowSprite(paul)
+        controller.moveSprite(paul)
+        tiles.setTilemap(tilemap`level1`)
     }
 }
-controller.moveSprite(paul)
-tiles.setTilemap(tilemap`level1`)
