@@ -1,3 +1,22 @@
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    story.showPlayerChoices("Volume", "Developers", "Return", "Exit")
+    if (story.checkLastAnswer("Developers")) {
+        story.showPlayerChoices("DevTools", "More...")
+        if (story.checkLastAnswer("DevTools")) {
+            story.showPlayerChoices("Console Mode", "API Visor ")
+        }
+    }
+    if (story.checkLastAnswer("Exit")) {
+        story.showPlayerChoices("Go Home", "I Changed My Mind...")
+        if (story.checkLastAnswer("Go Home")) {
+            game.showLongText("Sure? Your Progress will Do Not Save", DialogLayout.Bottom)
+            story.showPlayerChoices("Yes", "No")
+            if (story.checkLastAnswer("Yes")) {
+                game.reset()
+            }
+        }
+    }
+})
 controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
     story.showPlayerChoices("Volume", "Developers", "Return", "Exit")
     if (story.checkLastAnswer("Developers")) {
