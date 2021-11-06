@@ -1,7 +1,20 @@
 controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
-    story.showPlayerChoices("Volume", "Developers", "Exit", "Return To Game")
+    story.showPlayerChoices("Volume", "Developers", "Return", "Exit")
+    if (story.checkLastAnswer("Developers")) {
+        story.showPlayerChoices("DevTools", "More...")
+        if (story.checkLastAnswer("DevTools")) {
+            story.showPlayerChoices("Console Mode", "API Visor ")
+        }
+    }
     if (story.checkLastAnswer("Exit")) {
-        game.reset()
+        story.showPlayerChoices("Go Home", "I Changed My Mind...")
+        if (story.checkLastAnswer("Go Home")) {
+            game.showLongText("Sure? Your Progress will Do Not Save", DialogLayout.Bottom)
+            story.showPlayerChoices("Yes", "No")
+            if (story.checkLastAnswer("Yes")) {
+                game.reset()
+            }
+        }
     }
 })
 let paul: Sprite = null
@@ -166,8 +179,16 @@ if (story.checkLastAnswer("Settings")) {
         story.showPlayerChoices("Sound", "GamNet ID Settings", "Brightness", "About")
         if (story.checkLastAnswer("About")) {
             story.showPlayerChoices("Copyright", "About Game", "Manual")
+            if (story.checkLastAnswer("Copyright")) {
+                game.showLongText("Copyright ©2021 Tpro Studios, Paul, Miss Gardou, Is some of our Registered Marks. Microsoft MakeCode, Microsoft is a Trademark of Microsoft Corporation ©Microsoft Corporation", DialogLayout.Bottom)
+                game.reset()
+            }
             if (story.checkLastAnswer("Manual")) {
                 game.showLongText("Press A Button To Continue, In Game Press A Does Nothing, Press MENU To Get A Show of Pauls Adventure 2 Menu Press RESET To Restart The Game Use the + To Move Into The Options and Move Paul, Press A Again to Reset", DialogLayout.Bottom)
+                game.reset()
+            }
+            if (story.checkLastAnswer("About Game")) {
+                game.showLongText("Pauls Adventure 2 Season 1 Version 1.1.0", DialogLayout.Bottom)
                 game.reset()
             }
         }
