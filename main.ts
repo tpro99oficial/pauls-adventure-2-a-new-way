@@ -242,8 +242,8 @@ if (story.checkLastAnswer("Play")) {
             . . . . . f f f f f f . . . . . 
             . . . . . f f . . f f . . . . . 
             `, SpriteKind.Player)
+        tiles.setTilemap(tilemap`level1`)
         scene.cameraFollowSprite(paul)
         controller.moveSprite(paul)
-        tiles.setTilemap(tilemap`level1`)
     }
 }
